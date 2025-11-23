@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe – AUB Transport Prototype</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="phone-wrapper">
+      <div class="phone-frame">
+        <div class="phone-button left-top"></div>
+        <div class="phone-button left-bottom"></div>
+        <div class="phone-button right"></div>
+
+        <div class="phone-inner-bezel">
+          <div class="phone-screen">
+            <div class="status-bar">
+              <span id="status-time">9:41</span>
+              <div class="status-icons">
+                <div class="status-dot"></div>
+                <div class="status-bar-battery">
+                  <div class="status-bar-battery-fill"></div>
+                </div>
+              </div>
+            </div>
+
+            <header class="app-header">
+              <div class="app-brand">
+                <div class="app-logo">M</div>
+                <div>
+                  <div class="app-title">Swift Ride</div>
+                  <div class="app-subtitle">Mohamad</div>
+                </div>
+              </div>
+              <button class="menu-button" id="menuToggle" aria-label="Open menu">
+                <div class="menu-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </button>
+            </header>
+
+            <main class="screen-container">
+              <div class="screen-inner" id="screenRoot">
+                <!-- Screens loaded by app.js -->
+              </div>
+            </main>
+
+            <div class="bottom-safe-area">
+              <div class="home-indicator"></div>
+            </div>
+
+            <div class="toast" id="toast">
+              <div class="toast-dot"></div>
+              <span id="toastText">Using simulated location near Main Gate.</span>
+            </div>
+
+            <div class="menu-sheet-backdrop" id="menuBackdrop">
+              <div class="menu-sheet">
+                <div class="menu-header">
+                  <div class="menu-grabber"></div>
+                  <div class="menu-title">Quick actions</div>
+                </div>
+                <div class="menu-items">
+                  <button class="menu-item-btn" data-screen="home"><span><span class="menu-item-dot"></span> Home</span><span class="menu-item-pill">Overview</span></button>
+                  <button class="menu-item-btn" data-screen="bus"><span><span class="menu-item-dot"></span> Book a campus bus</span><span class="menu-item-pill">Class runs</span></button>
+                  <button class="menu-item-btn" data-screen="moto"><span><span class="menu-item-dot"></span> Get a moto taxi</span><span class="menu-item-pill">Fast hops</span></button>
+                  <button class="menu-item-btn" data-screen="scooter"><span><span class="menu-item-dot"></span> Rent a scooter</span><span class="menu-item-pill">Free roaming</span></button>
+                  <button class="menu-item-btn" data-screen="pricing"><span><span class="menu-item-dot"></span> Pricing & subscriptions</span><span class="menu-item-pill">Monthly</span></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-copy">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Live</span>
+      </div>
+      <h1>Demo of SwiftRide app</h1>
+      <p>
+        This prototype shows how an AUB student could rent a scooter, catch a van, or grab a moto taxi using our service.
+      </p>
+      
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="appJs.js"></script>
+</body>
+</html>
