@@ -545,7 +545,6 @@ function renderMotoScreen() {
       <div id="driversSection" style="display:none;">
   <div class="field-group">
     <div class="field-label">Drivers nearby</div>
-    <div class="field-helper">Pick both gates above to see drivers.</div>
     <div class="card-list" id="driverList"></div>
   </div>
 </div>
